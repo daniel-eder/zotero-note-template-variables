@@ -68,3 +68,7 @@ For live development with Zotero, copy `.env.example` to `.env`, set `ZOTERO_PLU
 ```powershell
 npm start
 ```
+
+## License
+
+Copyright (c) 2026 Daniel Eder. Licensed under the [MIT License](LICENSE).

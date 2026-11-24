@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2026 Daniel Eder
+ * Licensed under the MIT License. See LICENSE file in the project root.
+ */
+
 import { describe, expect, it } from "vitest";
 import {
   installAnnotationTemplatePatch,
