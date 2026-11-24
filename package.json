@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danieleder/zotero-note-template-vars.git"
+    "url": "https://github.com/daniel-eder/zotero-note-template-variables.git"
   },
   "scripts": {
     "start": "zotero-plugin serve",
