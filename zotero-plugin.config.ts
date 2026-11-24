@@ -20,9 +20,6 @@ export default defineConfig({
     esbuildOptions: [
       {
         entryPoints: ["src/index.ts"],
-        define: {
-          __env__: `"${process.env.NODE_ENV || "production"}"`,
-        },
         bundle: true,
         target: "firefox115",
         format: "iife",
