@@ -12,6 +12,9 @@ export default defineConfig({
   name: pkg.config.addonName,
   id: pkg.config.addonID,
   namespace: pkg.config.addonRef,
+  updateURL: `https://github.com/{{owner}}/{{repo}}/releases/download/release/{{updateJson}}`,
+  xpiDownloadLink:
+    "https://github.com/{{owner}}/{{repo}}/releases/download/v{{version}}/{{xpiName}}.xpi",
 
   build: {
     assets: ["addon/**/*.*"],
@@ -22,6 +25,9 @@ export default defineConfig({
       buildVersion: pkg.version,
       buildTime: "{{buildTime}}",
     },
+    makeUpdateJson: {
+      hash: true,
+    },
     esbuildOptions: [
       {
         entryPoints: ["src/index.ts"],
@@ -31,5 +37,15 @@ export default defineConfig({
         outfile: `.scaffold/build/addon/content/scripts/${pkg.config.addonRef}.js`,
       },
     ],
+  },
+
+  release: {
+    bumpp: {
+      execute: "npm run build",
+    },
+    github: {
+      enable: "ci",
+      updater: "release",
+    },
   },
 });
