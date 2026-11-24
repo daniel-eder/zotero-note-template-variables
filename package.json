@@ -1,6 +1,6 @@
 {
   "name": "zotero-note-template-vars",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "Adds citationKey, pageLabel, pdfLink, and other item/annotation variables to Zotero's annotation note templates.",
   "author": "Daniel Eder <danieleder@outlook.at>",
