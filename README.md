@@ -50,9 +50,9 @@ All built-in Zotero variables (`{{highlight}}`, `{{comment}}`, `{{citation}}`, `
 
 ## Installation
 
-1. Build the `.xpi` (`npm run build`), which outputs `.scaffold/build/note-template-variables.xpi`.
+1. Download the latest `note-template-variables.xpi` from the [GitHub Releases](https://github.com/daniel-eder/zotero-note-template-variables/releases/latest) page (or build it from source with `npm run build`, which outputs `.scaffold/build/note-template-variables.xpi`).
 2. In Zotero, open **Tools → Plugins**, click the gear icon, and choose **Install Plugin From File…**.
-3. Select the `.xpi` file.
+3. Select the `.xpi` file. Zotero will automatically check for updates via the hosted `update.json` manifest.
 
 ## Development
 
