@@ -12,13 +12,13 @@ Works everywhere Zotero serializes annotations:
 In Zotero, open **Settings → Advanced → Config Editor** and set `extensions.zotero.annotations.noteTemplates.highlight` to:
 
 ```html
-<p>{{highlight}} [@{{citationKey}}, p. {{pageLabel}}] {{citation}} {{pdfLink}}</p>
+<p>{{highlight}} {{citation}} {{comment}} [@{{citationKey}}, p. {{pageLabel}}]</p>
 ```
 
 Or with conditionals for missing citation keys / page labels:
 
 ```html
-<p>{{highlight}} {{if citationKey}}[@{{citationKey}}{{if pageLabel}}, p. {{pageLabel}}{{endif}}] {{endif}}{{citation}} {{pdfLink}}</p>
+<p>{{highlight}} {{citation}} {{comment}}{{if citationKey}} [@{{citationKey}}{{if pageLabel}}, p. {{pageLabel}}{{endif}}]{{endif}}</p>
 ```
 
 > **Tip (Quick Copy / Markdown):** If you include `{{pdfLink}}` in your template and use Zotero's Quick Copy with **Include Zotero Links** enabled, Zotero's Note Markdown / Note HTML translators will also append their own `(pdf)` link. Disable **Include Zotero Links** in **Settings → Export → Note Format** if you only want `{{pdfLink}}`.
