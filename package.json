@@ -1,0 +1,26 @@
+{
+  "name": "zotero-note-template-vars",
+  "version": "0.1.0",
+  "description": "Adds citationKey, pageLabel, pdfLink, and other item/annotation variables to Zotero's annotation note templates.",
+  "author": "Daniel Eder <danieleder@outlook.at>",
+  "license": "MIT",
+  "scripts": {
+    "start": "zotero-plugin serve",
+    "build": "zotero-plugin build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "config": {
+    "addonName": "Note Template Variables",
+    "addonID": "note-template-vars@danieleder.at",
+    "addonRef": "noteTemplateVars",
+    "addonInstance": "NoteTemplateVars",
+    "prefsPrefix": "extensions.noteTemplateVars"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1",
+    "zotero-plugin-scaffold": "^0.9.4",
+    "zotero-types": "^4.1.3"
+  }
+}
